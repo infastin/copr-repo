@@ -17,6 +17,7 @@ Requires: fontconfig
 Requires: libXinerama
 Requires: libXrandr
 
+BuildRequires: dh-autoreconf
 BuildRequires: gcc
 BuildRequires: cairo-devel         
 BuildRequires: libev-devel
