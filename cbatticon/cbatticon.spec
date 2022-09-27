@@ -34,3 +34,4 @@ make PREFIX=%{_prefix} install
 %files
 %license COPYRIGHT
 %doc README
+%{_bindir}/%{name}
