@@ -9,6 +9,8 @@ License: Custom
 URL: https://github.com/uditkarode/libxft-bgra
 Source0: https://github.com/uditkarode/libxft-bgra/archive/072cd202c0.tar.gz
 
+Provides: libXft
+
 Requires: libX11
 Requires: libXrender
 Requires: fontconfig
@@ -28,12 +30,17 @@ BuildRequires: gcc
 BuildRequires: make
 BuildRequires: pkgconf
 
-Provides: libXft
-
 BuildArch: x86_64
+
+%package devel
+Summary: Development files for %{name}-%{version}-%{release}.
+Provides: libXft-devel
 
 %description
 A patched version of libxft that allows for colored emojis to be rendered in Suckless software.
+
+%description devel
+Development files for %{name}-%{version}-%{release}.
 
 %prep
 %setup -q -n libxft-bgra-072cd202c0f4f757b32deac531586bc0429c8401
@@ -58,19 +65,13 @@ find $RPM_BUILD_ROOT -name "*.la" -delete
 %{_prefix}/lib/libXft.so.%{version}
 %{_prefix}/lib/libXft.so.%{release}
 %{_prefix}/lib/libXft.so
-%{_mandir}/man3/Xft.3
 
 %post -p /sbin/ldconfig
 %postun -p /sbin/ldconfigV
 
-%package devel
-Summary: Development files for %{name}-%{version}-%{release}.
-Provides: libXft-devel
-
-%description devel
-Development files for %{name}-%{version}-%{release}.
-
 %files devel
+%{_mandir}/man3/Xft.3
+%{_prefix}/lib/libXft.la
 %{_prefix}/lib/libXft.a
 %{_includedir}/X11/Xft/*
 %{_prefix}/lib/pkgconfig/xft.pc
