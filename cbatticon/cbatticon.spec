@@ -35,3 +35,7 @@ make PREFIX=%{_prefix} install
 %license COPYRIGHT
 %doc README
 %{_bindir}/%{name}
+
+%changelog
+* Tue 27 Sep 2022 18:39:12 +05
+- Release 1.6.13
