@@ -2,7 +2,7 @@
 
 Name: libXft-bgra
 Version: 2.3.3
-Release: 2
+Release: 2%{?dist}
 Summary: A patched version of libxft that allows for colored emojis to be rendered in Suckless software.
 
 License: Custom
