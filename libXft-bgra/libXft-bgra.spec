@@ -53,7 +53,7 @@ make %{?_smp_mflags}
 rm -rf %{buildroot}
 make install DESTDIR=%{buildroot}
 
-# find $RPM_BUILD_ROOT -name "*.la" -delete
+find $RPM_BUILD_ROOT -name "*.la" -delete
 
 %files
 %license COPYING
@@ -64,8 +64,7 @@ make install DESTDIR=%{buildroot}
 %{_prefix}/lib/libXft.so
 
 %files devel
-%{_mandir}/man3/Xft.3
-%{_prefix}/lib/libXft.la
+%{_mandir}/man3/Xft.3.gz
 %{_prefix}/lib/libXft.a
 %{_includedir}/X11/Xft/*
 %{_prefix}/lib/pkgconfig/xft.pc
