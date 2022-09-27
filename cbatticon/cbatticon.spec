@@ -16,7 +16,7 @@ BuildRequires: make
 BuildRequires: gcc
 BuildRequires: pkgconf
 
-BuildArch: noarch
+BuildArch: x86_64
 
 %description
 A lightweight and fast battery icon that sits in your system tray.
