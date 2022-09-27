@@ -56,7 +56,7 @@ make install DESTDIR=%{buildroot}
 
 tree %{buildroot}
 
-find $RPM_BUILD_ROOT -name "*.la" -delete
+# find $RPM_BUILD_ROOT -name "*.la" -delete
 
 %files
 %license COPYING
