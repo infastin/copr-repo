@@ -5,7 +5,7 @@ Version: 4.0.4
 Release: 1%{?dist}
 Summary: Sweet looking lockscreen for linux system.
 
-License: Custom
+License: MIT
 URL: https://github.com/betterlockscreen/betterlockscreen
 Source0: https://github.com/betterlockscreen/betterlockscreen/archive/v%{version}.tar.gz
 
