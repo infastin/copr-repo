@@ -5,7 +5,7 @@ Summary: A lightweight and fast battery icon that sits in your system tray.
 
 License: GNU General Public License v2.0 
 URL: https://github.com/valr/cbatticon
-Source0: %{url}/archive/%{version}.tar.gz?%{name}-%{version}.tar.gz
+Source0: https://github.com/valr/cbatticon/archive/%{version}.tar.gz
 
 Requires: libnotify
 Requires: gtk3
