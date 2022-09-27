@@ -30,10 +30,14 @@ make %{?_smp_mflags} WITH_NOTIFY=1 WITH_GTK3=1
 %install
 make PREFIX=%{buildroot}/%{_prefix} install
 
-%files
+%find_lang %{name}
+
+%files -f %{name}.lang
 %license COPYING
-%doc README
+
+%{_docdir}/%{name}-%{version}/README
 %{_bindir}/%{name}
+%{_mandir}/man1/%{name}.1.gz
 
 %changelog
 * Tue 27 Sep 2022 06:46:21 PM +05 
