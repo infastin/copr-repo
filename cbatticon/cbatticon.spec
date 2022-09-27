@@ -1,3 +1,5 @@
+%global debug_package %{nil}
+
 Name: cbatticon
 Version: 1.6.13
 Release: 1

@@ -17,6 +17,8 @@ Requires: fontconfig
 Requires: freetype
 Requires: libXext
 
+PreReq: /sbin/ldconfig
+
 BuildRequires: libXext-devel
 BuildRequires: libX11-devel
 BuildRequires: xorg-x11-util-macros
@@ -54,6 +56,9 @@ rm -rf %{buildroot}
 make install DESTDIR=%{buildroot}
 
 find $RPM_BUILD_ROOT -name "*.la" -delete
+
+%post -p /sbin/ldconfig
+%postun -p /sbin/ldconfig
 
 %files
 %license COPYING
