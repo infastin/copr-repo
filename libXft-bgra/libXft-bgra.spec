@@ -17,8 +17,6 @@ Requires: fontconfig
 Requires: freetype
 Requires: libXext
 
-PreReq: /sbin/ldconfig
-
 BuildRequires: libXext-devel
 BuildRequires: libX11-devel
 BuildRequires: xorg-x11-util-macros
@@ -65,7 +63,7 @@ find $RPM_BUILD_ROOT -name "*.la" -delete
 %doc AUTHORS README.md NEWS
 
 %{_prefix}/lib/libXft.so.%{version}
-%{_prefix}/lib/libXft.so.%{release}
+%{_prefix}/lib/libXft.so.%(echo %{version} | cut -d. -f1)
 %{_prefix}/lib/libXft.so
 
 %files devel
