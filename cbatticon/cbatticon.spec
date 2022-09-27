@@ -31,7 +31,7 @@ make %{?_smp_mflags} WITH_NOTIFY=1 WITH_GTK3=1
 make PREFIX=%{buildroot}/%{_prefix} install
 
 %files
-%license COPYRIGHT
+%license COPYING
 %doc README
 %{_bindir}/%{name}
 
