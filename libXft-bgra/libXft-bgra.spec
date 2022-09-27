@@ -58,6 +58,7 @@ find $RPM_BUILD_ROOT -name "*.la" -delete
 %{_prefix}/lib/libXft.so.%{version}
 %{_prefix}/lib/libXft.so.%{release}
 %{_prefix}/lib/libXft.so
+%{_mandir}/man3/Xft.3
 
 %post -p /sbin/ldconfig
 %postun -p /sbin/ldconfigV
@@ -70,7 +71,6 @@ Provides: libXft-devel
 Development files for %{name}-%{version}-%{release}.
 
 %files devel
-%{_mandir}/man3/Xft.3
 %{_prefix}/lib/libXft.a
 %{_includedir}/X11/Xft/*
 %{_prefix}/lib/pkgconfig/xft.pc
