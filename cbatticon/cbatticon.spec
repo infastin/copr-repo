@@ -28,7 +28,7 @@ A lightweight and fast battery icon that sits in your system tray.
 make %{?_smp_mflags} WITH_NOTIFY=1 WITH_GTK3=1
 
 %install
-make PREFIX=%{_prefix} install
+make PREFIX=%{buildroot}/%{_prefix} install
 
 %files
 %license COPYRIGHT
