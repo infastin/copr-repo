@@ -7,7 +7,7 @@ Summary: A pretty system information tool written in POSIX sh.
 
 License: MIT
 URL: https://github.com/dylanaraps/pfetch
-Source0: https://github.com/dylanaraps/pfetch/archive/v%{version}.tar.gz
+Source0: https://github.com/dylanaraps/pfetch/archive/%{version}.tar.gz
 
 BuildArch: x86_64
 
