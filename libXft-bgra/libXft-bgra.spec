@@ -15,6 +15,7 @@ Requires: fontconfig
 Requires: freetype
 Requires: libXext
 
+BuildRequires: tree
 BuildRequires: libXext-devel
 BuildRequires: libX11-devel
 BuildRequires: xorg-x11-util-macros
@@ -46,6 +47,8 @@ make %{?_smp_mflags}
 rm -rf %{buildroot}
 make install DESTDIR=%{buildroot}
 
+tree %{buildroot}
+
 find $RPM_BUILD_ROOT -name "*.la" -delete
 
 %files
@@ -67,7 +70,7 @@ Provides: libXft-devel
 Development files for %{name}-%{version}-%{release}.
 
 %files devel
-%{_prefix}/man/man3/Xft.3
+%{_mandir}/man3/Xft.3
 %{_prefix}/lib/libXft.a
 %{_includedir}/X11/Xft/*
 %{_prefix}/lib/pkgconfig/xft.pc
