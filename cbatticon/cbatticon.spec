@@ -25,7 +25,6 @@ A lightweight and fast battery icon that sits in your system tray.
 %setup -q
 
 %build
-%configure
 make %{?_smp_mflags} WITH_NOTIFY=1 WITH_GTK3=1
 
 %install
@@ -37,5 +36,5 @@ make PREFIX=%{_prefix} install
 %{_bindir}/%{name}
 
 %changelog
-* Tue 27 Sep 2022 18:39:12 +05
+* Tue 27 Sep 2022 06:46:21 PM +05 
 - Release 1.6.13
