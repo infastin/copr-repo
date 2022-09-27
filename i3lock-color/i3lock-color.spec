@@ -2,7 +2,7 @@
 
 Name: i3lock-color
 Version: 2.13.c.4
-Release: 2%{?dist}
+Release: 1%{?dist}
 Summary: The world's most popular non-default computer lockscreen.
 
 License: MIT

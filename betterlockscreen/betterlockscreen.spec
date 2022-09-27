@@ -2,7 +2,7 @@
 
 Name: betterlockscreen
 Version: 4.0.4
-Release: 4%{?dist}
+Release: 1%{?dist}
 Summary: Sweet looking lockscreen for linux system.
 
 License: Custom
