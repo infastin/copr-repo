@@ -1,13 +1,16 @@
 %global debug_package %{nil}
 
+%global githash 072cd202c0f4f757b32deac531586bc0429c8401 
+%global shorthash %(echo %{githash} | cut -c 1-10)
+
 Name: libXft-bgra
 Version: 2.3.3
-Release: 1%{?dist}
+Release: 1.%{shorthash}%{?dist}
 Summary: A patched version of libxft that allows for colored emojis to be rendered in Suckless software.
 
 License: Custom
 URL: https://github.com/uditkarode/libxft-bgra
-Source0: https://github.com/uditkarode/libxft-bgra/archive/072cd202c0.tar.gz
+Source0: https://github.com/uditkarode/libxft-bgra/archive/%{githash}.tar.gz
 
 Provides: libXft
 Conflicts: libXft
@@ -44,7 +47,7 @@ A patched version of libxft that allows for colored emojis to be rendered in Suc
 Development files for %{name}-%{version}-%{release}.
 
 %prep
-%setup -q -n libxft-bgra-072cd202c0f4f757b32deac531586bc0429c8401
+%setup -q -n libxft-bgra-%{githash}
 
 %build
 sh autogen.sh --sysconfdir=%{_sysconfdir}\
