@@ -39,7 +39,7 @@ make PREFIX=%{buildroot}/%{_prefix} install
 
 %{_docdir}/%{name}-%{version}/README
 %{_bindir}/%{name}
-%{_mandir}/man1/%{name}.1.gz
+%{_mandir}/man1/%{name}.1*
 
 %changelog
 * Tue 27 Sep 2022 06:46:21 PM +05 

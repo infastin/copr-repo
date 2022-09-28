@@ -5,7 +5,7 @@
 
 Name: libXft-bgra
 Version: 2.3.3
-Release: 1.%{shorthash}%{?dist}
+Release: 2.%{shorthash}%{?dist}
 Summary: A patched version of libxft that allows for colored emojis to be rendered in Suckless software.
 
 License: Custom
@@ -15,28 +15,18 @@ Source0: https://github.com/uditkarode/libxft-bgra/archive/%{githash}.tar.gz
 Provides: libXft
 Conflicts: libXft
 
-Requires: libX11
-Requires: libXrender
-Requires: fontconfig
-Requires: freetype
-Requires: libXext
+Requires: fontconfig >= 2.2-1
 
-BuildRequires: libXext-devel
-BuildRequires: libX11-devel
+BuildRequires: make	
 BuildRequires: xorg-x11-util-macros
-BuildRequires: libtool
-BuildRequires: autoconf
-BuildRequires: libXrender-devel
-BuildRequires: fontconfig-devel
-BuildRequires: freetype-devel
-BuildRequires: gcc
-BuildRequires: make
-BuildRequires: pkgconf
-
-BuildArch: x86_64
+BuildRequires: autoconf automake libtool
+BuildRequires: pkgconfig(xrender)
+BuildRequires: freetype-devel >= 2.1.9-2
+BuildRequires: fontconfig-devel >= 2.2-1
 
 %package devel
 Summary: Development files for %{name}-%{version}-%{release}.
+
 Provides: libXft-devel
 Conflicts: libXft-devel
 
@@ -50,9 +40,9 @@ Development files for %{name}-%{version}-%{release}.
 %setup -q -n libxft-bgra-%{githash}
 
 %build
-sh autogen.sh --sysconfdir=%{_sysconfdir}\
-	--prefix=%{_prefix} --mandir=%{_mandir}
-make %{?_smp_mflags}
+autoreconf -v --install --force
+%configure
+make %{?_smp_mflags} 
 
 %install
 rm -rf %{buildroot}
@@ -60,22 +50,22 @@ make install DESTDIR=%{buildroot}
 
 find $RPM_BUILD_ROOT -name "*.la" -delete
 
-%post -p /sbin/ldconfig
-%postun -p /sbin/ldconfig
+%ldconfig_post
+%ldconfig_postun
 
 %files
 %license COPYING
 %doc AUTHORS README.md NEWS
 
-%{_prefix}/lib/libXft.so.%{version}
-%{_prefix}/lib/libXft.so.%(echo %{version} | cut -d. -f1)
-%{_prefix}/lib/libXft.so
+%{_libdir}/libXft.so.%{version}
+%{_libdir}/libXft.so.%(echo %{version} | cut -d. -f1)
+%{_libdir}/libXft.so
 
 %files devel
-%{_mandir}/man3/Xft.3.gz
-%{_prefix}/lib/libXft.a
+%{_mandir}/man3/Xft.3*
+%{_libdir}/libXft.a
 %{_includedir}/X11/Xft
-%{_prefix}/lib/pkgconfig/xft.pc
+%{_libdir}/pkgconfig/xft.pc
 
 %changelog
 * Tue 27 Sep 2022 11:09:16 PM +05
