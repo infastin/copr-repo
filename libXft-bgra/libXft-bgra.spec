@@ -10,6 +10,7 @@ URL: https://github.com/uditkarode/libxft-bgra
 Source0: https://github.com/uditkarode/libxft-bgra/archive/072cd202c0.tar.gz
 
 Provides: libXft
+Conflicts: libXft
 
 Requires: libX11
 Requires: libXrender
@@ -34,6 +35,7 @@ BuildArch: x86_64
 %package devel
 Summary: Development files for %{name}-%{version}-%{release}.
 Provides: libXft-devel
+Conflicts: libXft-devel
 
 %description
 A patched version of libxft that allows for colored emojis to be rendered in Suckless software.
