@@ -5,7 +5,7 @@
 
 Name: material-icons-fonts
 Version: 4.0.0
-Release: 1.%{shorthash}%{?dist}
+Release: 8.%{shorthash}%{?dist}
 Summary: Material Design icons by Google. 
 
 License: Apache License 2.0
