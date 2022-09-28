@@ -34,13 +34,13 @@ install -m 0755 -d %{buildroot}%{_unitdir}
 install -m 0644 system/betterlockscreen@.service %{buildroot}%{_unitdir}
 
 %post
-%systemd_post %{name}@.service
+%systemd_post %{name}@USER.service
 
 %preun
-%systemd_preun %{name}@.service
+%systemd_preun %{name}@USER.service
 
 %postun
-%systemd_postun %{name}@.service
+%systemd_postun %{name}@USER.service
 
 %files
 %license LICENSE
