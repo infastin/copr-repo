@@ -5,7 +5,7 @@ Version: 1.1.2
 Release: 1%{?dist}
 Summary: Opensource, compact, and material designed cursor set. 
 
-License: MIT
+License: GNU General Public License v3.0
 URL: https://github.com/ful1e5/Bibata_Cursor
 Source0: https://github.com/ful1e5/Bibata_Cursor/releases/download/%{version}/Bibata.tar.gz
 
