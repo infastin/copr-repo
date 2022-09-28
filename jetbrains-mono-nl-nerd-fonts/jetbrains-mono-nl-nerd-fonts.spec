@@ -15,7 +15,7 @@ BuildArch: x86_64
 A Nerd Font patched version of JetBrains Mono.
 
 %prep
-%setup -q -c %{name}
+%setup -q -c
 
 %build
 find -iname "*Windows Compatible.ttf" -delete
