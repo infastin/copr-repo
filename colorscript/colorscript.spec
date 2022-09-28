@@ -29,7 +29,7 @@ make PREFIX=%{buildroot}/%{_prefix} install
 %doc README.md
 
 %{_bindir}/%{name}
-%{_datadir}/%{name}/*
+%{_datadir}/%{name}
 
 %changelog
 * Tue 27 Sep 2022 10:03:56 PM +05

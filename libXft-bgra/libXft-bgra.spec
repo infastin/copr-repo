@@ -69,7 +69,7 @@ find $RPM_BUILD_ROOT -name "*.la" -delete
 %files devel
 %{_mandir}/man3/Xft.3.gz
 %{_prefix}/lib/libXft.a
-%{_includedir}/X11/Xft/*
+%{_includedir}/X11/Xft
 %{_prefix}/lib/pkgconfig/xft.pc
 
 %changelog
