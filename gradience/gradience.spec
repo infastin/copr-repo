@@ -34,6 +34,7 @@ BuildRequires: meson
 BuildRequires: libadwaita-devel
 BuildRequires: python3
 BuildRequires: python3-lxml
+BuildRequires: desktop-file-utils
 
 %description
 Gradience is a tool for customizing Libadwaita applications and the adw-gtk3 theme.
