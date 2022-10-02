@@ -7,7 +7,7 @@ Version: 0.3.0
 Release: %autorelease
 Summary: Gradience is a tool for customizing Libadwaita applications and the adw-gtk3 theme. 
 
-License: GNU General Public License v2.0 
+License: GNU General Public License v3.0 
 URL: https://github.com/GradienceTeam/Gradience
 Source0: https://github.com/GradienceTeam/Gradience/archive/%{version}.tar.gz
 
