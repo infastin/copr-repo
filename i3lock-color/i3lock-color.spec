@@ -30,8 +30,6 @@ BuildRequires: xcb-util-image-devel
 BuildRequires: xcb-util-xrm-devel
 BuildRequires: make
 
-BuildArch: x86_64
-
 %description
 The world's most popular non-default computer lockscreen.
 

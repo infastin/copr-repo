@@ -12,8 +12,6 @@ Source0: https://github.com/infastin/colorscript/archive/%{version}.tar.gz
 BuildRequires: gcc
 BuildRequires: make
 
-BuildArch: x86_64
-
 %description
 A collection of terminal color scripts Derek Taylor accumulated over the years.
 Some of them were cut out because of their size. This variation has 38 scripts in total.

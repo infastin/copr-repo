@@ -17,8 +17,6 @@ BuildRequires: gcc
 BuildRequires: make
 BuildRequires: pkgconf
 
-BuildArch: x86_64
-
 %description
 Create system tray icons by writing to a pipe. 
 

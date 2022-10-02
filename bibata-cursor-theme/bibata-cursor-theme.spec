@@ -9,8 +9,6 @@ License: GNU General Public License v3.0
 URL: https://github.com/ful1e5/Bibata_Cursor
 Source0: https://github.com/ful1e5/Bibata_Cursor/releases/download/v%{version}/Bibata.tar.gz
 
-BuildArch: x86_64
-
 %description
 Opensource, compact, and material designed cursor set. 
 

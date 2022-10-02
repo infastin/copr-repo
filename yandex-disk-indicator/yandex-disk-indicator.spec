@@ -19,8 +19,6 @@ Requires: zenity
 Requires: libappindicator-gtk3
 Requires: libappindicator-gtk3-devel
 
-BuildArch: x86_64
-
 %description
 Panel indicator (GTK+) for YandexDisk CLI client for Linux. 
 

@@ -11,8 +11,6 @@ Source0: https://github.com/jesseduffield/lazygit/archive/v%{version}.tar.gz
 
 BuildRequires: golang >= 1.18.0
 
-BuildArch: x86_64
-
 %description
 Simple terminal UI for git commands 
 

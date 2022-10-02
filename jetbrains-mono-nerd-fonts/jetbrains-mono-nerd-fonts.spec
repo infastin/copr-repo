@@ -9,8 +9,6 @@ License: MIT
 URL: https://github.com/ryanoasis/nerd-fonts
 Source0: https://github.com/ryanoasis/nerd-fonts/releases/download/v%{version}/JetBrainsMono.zip
 
-BuildArch: x86_64
-
 %description
 A Nerd Font patched version of JetBrains Mono.
 

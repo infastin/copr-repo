@@ -19,8 +19,6 @@ Requires: ImageMagick
 BuildRequires: systemd
 BuildRequires: systemd-rpm-macros
 
-BuildArch: x86_64
-
 %description
 Sweet looking lockscreen for linux system.
 
