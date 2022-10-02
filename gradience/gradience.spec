@@ -13,7 +13,7 @@ Source0: https://github.com/GradienceTeam/Gradience/archive/%{version}.tar.gz
 
 Requires: python3
 Requires: python3-gobject
-Requires: gtk4
+Requires: gtk4 >= 4.5.0
 Requires: libadwaita >= 1.2~alpha
 Requires: hicolor-icon-theme
 Requires: python3dist(aiohttp)
@@ -23,6 +23,7 @@ Requires: python3dist(jinja2)
 Requires: python3dist(material-color-utilities-python)
 Requires: python3dist(svglib)
 Requires: python3dist(yapsy)
+Requires: python3dist(lxml)
 
 BuildRequires: sassc
 BuildRequires: python3-devel
