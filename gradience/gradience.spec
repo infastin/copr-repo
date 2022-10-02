@@ -23,7 +23,6 @@ Requires: python3dist(jinja2)
 Requires: python3dist(material-color-utilities-python)
 Requires: python3dist(svglib)
 Requires: python3dist(yapsy)
-Requires: python3dist(lxml)
 
 BuildRequires: sassc
 BuildRequires: python3-devel
@@ -34,6 +33,7 @@ BuildRequires: gtk4-devel
 BuildRequires: meson
 BuildRequires: libadwaita-devel
 BuildRequires: python3
+BuildRequires: python3-lxml
 
 %description
 Gradience is a tool for customizing Libadwaita applications and the adw-gtk3 theme.
