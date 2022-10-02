@@ -58,8 +58,7 @@ find $RPM_BUILD_ROOT -name "*.la" -delete
 %license COPYING
 %doc AUTHORS README.md NEWS
 
-%{_libdir}/libXft.so.%{version}
-%{_libdir}/libXft.so.%(echo %{version} | cut -d. -f1)
+%{_libdir}/libXft.so.2*
 %{_libdir}/libXft.so
 
 %files devel

@@ -15,7 +15,7 @@ Source0: https://github.com/nonpop/xkblayout-state/archive/%{githash}.tar.gz
 Requires: libX11
 
 BuildRequires: libX11-devel
-BuildRequires: gcc
+BuildRequires: g++
 BuildRequires: make
 
 %description

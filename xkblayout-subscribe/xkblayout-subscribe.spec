@@ -10,8 +10,8 @@ Release: 1%{?dist}
 Summary: A small command-line program to monitor keyboard layout changes.
 
 License: MIT 
-URL: https://github.com/nonpop/xkblayout-state
-Source0: https://github.com/nonpop/xkblayout-state/archive/%{githash}.tar.gz
+URL: https://github.com/infastin/xkblayout-subscribe
+Source0: https://github.com/infastin/xkblayout-subscribe/archive/%{githash}.tar.gz
 
 Requires: libX11
 
