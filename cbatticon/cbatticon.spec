@@ -2,7 +2,7 @@
 
 Name: cbatticon
 Version: 1.6.13
-Release: 1%{?dist}
+Release: %autorelease
 Summary: A lightweight and fast battery icon that sits in your system tray.
 
 License: GNU General Public License v2.0 
@@ -40,5 +40,4 @@ make PREFIX=%{buildroot}/%{_prefix} install
 %{_mandir}/man1/%{name}.1*
 
 %changelog
-* Tue 27 Sep 2022 06:46:21 PM +05 
-- Release 1.6.13
+%autochangelog

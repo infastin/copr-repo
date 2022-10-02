@@ -2,7 +2,7 @@
 
 Name: pfetch
 Version: 0.6.0
-Release: 1%{?dist}
+Release: %autorelease
 Summary: A pretty system information tool written in POSIX sh.
 
 License: MIT
@@ -26,5 +26,4 @@ install -m 0755 pfetch %{buildroot}%{_bindir}
 %{_bindir}/pfetch
 
 %changelog
-* Wed 28 Sep 2022 03:55:53 AM +05
-- Release 0.6.0
+%autochangelog

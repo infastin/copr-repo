@@ -2,7 +2,7 @@
 
 Name: colorscript
 Version: 1.0.1
-Release: 1%{?dist}
+Release: %autorelease
 Summary: A collection of terminal color scripts.
 
 License: MIT
@@ -30,7 +30,4 @@ make PREFIX=%{buildroot}/%{_prefix} install
 %{_datadir}/%{name}
 
 %changelog
-* Wed 28 Sep 2022 05:47:14 AM +05
-- Release 1.0.1
-* Tue 27 Sep 2022 10:03:56 PM +05
-- Release 1.0.0
+%autochangelog

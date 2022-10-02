@@ -2,7 +2,7 @@
 
 Name: i3lock-color
 Version: 2.13.c.4
-Release: 1%{?dist}
+Release: %autorelease
 Summary: The world's most popular non-default computer lockscreen.
 
 License: MIT
@@ -53,5 +53,4 @@ make install DESTDIR=%{buildroot}
 %{_mandir}/man1/i3lock.1.gz
 
 %changelog
-* Wed 28 Sep 2022 03:14:09 AM +05
-- Release 2.13.c.4
+%autochangelog

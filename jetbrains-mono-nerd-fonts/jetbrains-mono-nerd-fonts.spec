@@ -2,7 +2,7 @@
 
 Name: jetbrains-mono-nerd-fonts
 Version: 2.2.2
-Release: 1%{?dist}
+Release: %autorelease
 Summary: A Nerd Font patched version of JetBrains Mono.
 
 License: MIT
@@ -35,5 +35,4 @@ fc-cache -f -v
 %{_datadir}/fonts/%{name}
 
 %changelog
-* Wed 28 Sep 2022 03:55:53 AM +05
-- Release 2.2.2
+%autochangelog

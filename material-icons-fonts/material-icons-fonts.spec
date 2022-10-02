@@ -6,7 +6,7 @@
 
 Name: material-icons-fonts
 Version: 4.0.0^%{gitdate}.%{shorthash}
-Release: 9%{?dist}
+Release: %autorelease
 Summary: Material Design icons by Google. 
 
 License: Apache License 2.0
@@ -37,5 +37,4 @@ fc-cache -f -v
 %{_datadir}/fonts/%{name}
 
 %changelog
-* Wed 28 Sep 2022 03:55:53 AM +05
-- Release 4.0.0^20220920.f7bd4f25f3
+%autochangelog

@@ -2,7 +2,7 @@
 
 Name: mktrayicon
 Version: 1.0.0
-Release: 1%{?dist}
+Release: %autorelease
 Summary: Create system tray icons by writing to a pipe. 
 
 License: MIT
@@ -36,5 +36,4 @@ make PREFIX=%{buildroot}/%{_prefix} install
 %{_bindir}/%{name}
 
 %changelog
-* Tue 27 Sep 2022 10:03:56 PM +05
-- Release 1.0.0
+%autochangelog

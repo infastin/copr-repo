@@ -6,7 +6,7 @@
 
 Name: xkblayout-subscribe
 Version: 0^%{gitdate}.%{shorthash}
-Release: 1%{?dist}
+Release: %autorelease
 Summary: A small command-line program to monitor keyboard layout changes.
 
 License: MIT 
@@ -37,5 +37,4 @@ make PREFIX=%{buildroot}/%{_prefix} install
 %{_bindir}/%{name}
 
 %changelog
-* Sun 02 Oct 2022 03:27:09 PM +05
-- Release 0^20201002.84290e8bcf
+%autochangelog

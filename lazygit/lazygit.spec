@@ -2,7 +2,7 @@
 
 Name: lazygit
 Version: 0.35
-Release: 1%{?dist}
+Release: %autorelease
 Summary: Simple terminal UI for git commands.
 
 License: MIT
@@ -31,5 +31,4 @@ install -m 0755 lazygit %{buildroot}%{_bindir}
 %{_bindir}/lazygit
 
 %changelog
-* Wed 28 Sep 2022 06:02:38 AM +05 
-- Release 0.35
+%autochangelog

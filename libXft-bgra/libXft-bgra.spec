@@ -6,7 +6,7 @@
 
 Name: libXft-bgra
 Version: 2.3.3^%{gitdate}.%{shorthash}
-Release: 4%{?dist}
+Release: %autorelease
 Summary: A patched version of libxft that allows for colored emojis to be rendered in Suckless software.
 
 License: MIT
@@ -68,5 +68,4 @@ find $RPM_BUILD_ROOT -name "*.la" -delete
 %{_libdir}/pkgconfig/xft.pc
 
 %changelog
-* Tue 27 Sep 2022 11:09:16 PM +05
-- Release 2.3.3^20200807.072cd202c0
+%autochangelog

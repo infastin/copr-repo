@@ -2,7 +2,7 @@
 
 Name: betterlockscreen
 Version: 4.0.4
-Release: 2%{?dist}
+Release: %autorelease
 Summary: Sweet looking lockscreen for linux system.
 
 License: MIT
@@ -49,5 +49,4 @@ install -m 0644 system/betterlockscreen@.service %{buildroot}%{_unitdir}
 %{_unitdir}/betterlockscreen@.service
 
 %changelog
-* Wed 28 Sep 2022 02:51:59 AM +05
-- Release 4.0.4
+%autochangelog
