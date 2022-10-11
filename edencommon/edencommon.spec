@@ -18,6 +18,7 @@ BuildRequires: gflags-devel
 
 %package devel
 Summary: Development files for %{name}-%{version}-%{release}.
+Requires: %{name} = %{version}-%{release}
 
 %description
 This contains various utility libraries common between EdenFS

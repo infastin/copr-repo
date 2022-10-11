@@ -27,6 +27,7 @@ BuildRequires: fontconfig-devel >= 2.2-1
 
 %package devel
 Summary: Development files for %{name}-%{version}-%{release}.
+Requires: %{name} = %{version}-%{release}
 
 Provides: libXft-devel
 Conflicts: libXft-devel
