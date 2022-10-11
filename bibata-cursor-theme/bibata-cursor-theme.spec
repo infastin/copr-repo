@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name: bibata-cursor-theme
-Version: 2.0.1
+Version: 2.0.2
 Release: %autorelease
 Summary: Opensource, compact, and material designed cursor set. 
 
