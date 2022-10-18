@@ -27,17 +27,20 @@ cd 3rd/luamake
 cd ../..
 ./3rd/luamake/luamake
 
+%global optdir /opt/%{name}
+%define user %(who | awk '{print $1}')
+
 %install
-install -m 0755 -d %{buildroot}%{_prefix}/lib/%{name}/bin
-install -m 0755 bin/lua-language-server %{buildroot}%{_prefix}/lib/%{name}/bin
-install -m 0644 bin/main.lua %{buildroot}%{_prefix}/lib/%{name}/bin
-install -m 0644 main.lua %{buildroot}%{_prefix}/lib/%{name}
-install -m 0664 debugger.lua %{buildroot}%{_prefix}/lib/%{name}
-cp -r locale meta script %{buildroot}%{_prefix}/lib/%{name}
+install -m 0755 -d %{buildroot}%{optdir}/bin
+install -m 0755 bin/lua-language-server %{buildroot}%{optdir}/bin
+install -m 0644 bin/main.lua %{buildroot}%{optdir}/bin
+install -m 0644 main.lua %{buildroot}%{optdir}
+install -m 0664 debugger.lua %{buildroot}%{optdir}
+cp -r locale meta script %{buildroot}%{optdir}
 install -m 0755 -d %{buildroot}%{_bindir}
 
 %post
-ln -s %{_prefix}/lib/%{name}/bin/lua-language-server %{_bindir}/lua-language-server
+ln -s %{optdir}/bin/lua-language-server %{_bindir}/lua-language-server
 
 %postun
 rm %{_bindir}/lua-language-server
@@ -45,8 +48,7 @@ rm %{_bindir}/lua-language-server
 %files
 %license LICENSE
 %doc README.md
-
-%{_prefix}/lib/%{name}
+%attr(-, %{user}, root) %{optdir}
 
 %changelog
 %autochangelog
