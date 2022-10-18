@@ -41,14 +41,16 @@ install -m 0755 -d %{buildroot}%{_bindir}
 
 %post
 ln -s %{optdir}/bin/lua-language-server %{_bindir}/lua-language-server
+chown %{user} %{optdir}
 
 %postun
 rm %{_bindir}/lua-language-server
+rm -rf %{optdir}
 
 %files
 %license LICENSE
 %doc README.md
-%attr(-, %{user}, root) %{optdir}
+%{optdir}
 
 %changelog
 %autochangelog
