@@ -29,7 +29,7 @@ cd ../..
 
 %install
 install -m 0755 -d %{buildroot}%{_bindir}
-install -m 0755 lua-language-server %{buildroot}%{_bindir}
+install -m 0755 ./bin/lua-language-server %{buildroot}%{_bindir}
 
 %files
 %license LICENSE
