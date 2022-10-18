@@ -28,14 +28,15 @@ cd ../..
 ./3rd/luamake/luamake
 
 %install
-install -m 0755 -d %{buildroot}%{_bindir}
-install -m 0755 ./bin/lua-language-server %{buildroot}%{_bindir}
+install -m 0755 -d %{buildroot}%{_prefix}/lib/%{name}/bin
+install -m 0755 ./bin/lua-language-server %{buildroot}%{_prefix}/lib/%{name}/bin
+install -m 0644 ./bin/main.lua %{buildroot}%{_prefix}/lib/%{name}/bin
 
 %files
 %license LICENSE
 %doc README.md
 
-%{_bindir}/lua-language-server
+%{_prefix}/lib/%{name}/bin
 
 %changelog
 %autochangelog

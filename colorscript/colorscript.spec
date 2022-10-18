@@ -20,7 +20,7 @@ Some of them were cut out because of their size. This variation has 38 scripts i
 %setup -q
 
 %install
-make PREFIX=%{buildroot}/%{_prefix} install
+make PREFIX=%{buildroot}%{_prefix} install
 
 %files
 %license LICENSE

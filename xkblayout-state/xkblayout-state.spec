@@ -29,7 +29,7 @@ A small command-line program to get/set the current keyboard layout.
 make %{?_smp_mflags}
 
 %install
-make PREFIX=%{buildroot}/%{_prefix} install
+make PREFIX=%{buildroot}%{_prefix} install
 
 %files
 %doc README.md

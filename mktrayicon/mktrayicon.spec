@@ -27,7 +27,7 @@ Create system tray icons by writing to a pipe.
 make %{?_smp_mflags}
 
 %install
-make PREFIX=%{buildroot}/%{_prefix} install
+make PREFIX=%{buildroot}%{_prefix} install
 
 %files
 %license LICENSE
