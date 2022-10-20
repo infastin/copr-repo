@@ -17,7 +17,6 @@ Source0: https://github.com/zigtools/zls/archive/%{githash}.tar.gz
 Source1: https://ziglang.org/builds/%{zig_master}.tar.xz
 
 BuildRequires: git
-BuildRequires: llvm
 
 %description
 Zig Language Server, or zls, is a language server for Zig.
