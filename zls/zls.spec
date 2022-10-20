@@ -16,6 +16,7 @@ Source0: https://github.com/zigtools/zls/archive/%{githash}.tar.gz
 Requires: zig >= 0.9.1^20221020.a4eb221b9e
 
 BuildRequires: git
+BuildRequires: zig >= 0.9.1^20221020.a4eb221b9e
 
 %description
 Zig Language Server, or zls, is a language server for Zig.
