@@ -7,9 +7,10 @@ Summary: A language server that offers Lua language support - programmed in Lua.
 
 License: MIT
 URL: https://github.com/sumneko/lua-language-server
-Source0: https://github.com/sumneko/lua-language-server/releases/download/3.5.6/%{name}-%{version}-submodules.zip
+Source0: https://github.com/sumneko/lua-language-server/archive/refs/tags/3.5.6.tar.gz
 Source1: ./lua-language-server
 
+BuildRequires: git
 BuildRequires: gcc-c++
 BuildRequires: ninja-build
 BuildRequires: libstdc++-devel
@@ -20,6 +21,12 @@ A language server that offers Lua language support - programmed in Lua.
 
 %prep
 %setup -q -c
+
+git init
+git remote add origin %{URL}.git
+git fetch origin
+git reset --hard FETCH_HEAD
+git submodule update --depth 1 --init --recursive
 
 %build
 cd 3rd/luamake
