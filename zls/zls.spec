@@ -6,7 +6,7 @@
 
 Name: zls
 Version: 0.9.0^%{gitdate}.%{shorthash}
-Release: %autorelease
+Release: 2%{?dist}
 Summary: Zig LSP implementation + Zig Language Server.
 
 License: MIT

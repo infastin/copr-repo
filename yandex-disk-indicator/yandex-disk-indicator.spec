@@ -2,7 +2,7 @@
 
 Name: yandex-disk-indicator
 Version: 1.11.0
-Release: %autorelease
+Release: 2%{?dist}
 Summary: Panel indicator (GTK+) for YandexDisk CLI client for Linux. 
 
 License: GNU General Public License v3.0

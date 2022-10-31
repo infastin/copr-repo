@@ -2,7 +2,7 @@
 
 Name: cbatticon
 Version: 1.6.13
-Release: %autorelease
+Release: 2%{?dist}
 Summary: A lightweight and fast battery icon that sits in your system tray.
 
 License: GNU General Public License v2.0 

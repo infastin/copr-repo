@@ -2,7 +2,7 @@
 
 Name: colorscript
 Version: 1.0.1
-Release: %autorelease
+Release: 2%{?dist}
 Summary: A collection of terminal color scripts.
 
 License: MIT

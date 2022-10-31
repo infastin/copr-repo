@@ -6,7 +6,7 @@
 
 Name: xkblayout-state
 Version: 1b^%{gitdate}.%{shorthash}
-Release: %autorelease
+Release: 2%{?dist}
 Summary: A small command-line program to get/set the current keyboard layout.
 
 License: GNU General Public License v2.0 

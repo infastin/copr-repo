@@ -2,7 +2,7 @@
 
 Name: bibata-cursor-theme
 Version: 2.0.2
-Release: %autorelease
+Release: 2%{?dist}
 Summary: Opensource, compact, and material designed cursor set. 
 
 License: GNU General Public License v3.0

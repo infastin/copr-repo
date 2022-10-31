@@ -2,7 +2,7 @@
 
 Name: adw-gtk3-theme
 Version: 4.0
-Release: %autorelease
+Release: 2%{?dist}
 Summary: The theme from libadwaita ported to GTK-3.
 
 License: GNU Lesser General Public License v2.1

@@ -2,7 +2,7 @@
 
 Name: mktrayicon
 Version: 1.0.0
-Release: %autorelease
+Release: 2%{?dist}
 Summary: Create system tray icons by writing to a pipe. 
 
 License: MIT

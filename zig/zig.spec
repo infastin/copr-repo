@@ -7,7 +7,7 @@
 
 Name: zig
 Version: 0.9.1^%{gitdate}.%{shorthash}
-Release: %autorelease
+Release: 2%{?dist}
 Summary: General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software.
 
 License: MIT

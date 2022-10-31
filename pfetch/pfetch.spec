@@ -2,7 +2,7 @@
 
 Name: pfetch
 Version: 0.6.0
-Release: %autorelease
+Release: 2%{?dist}
 Summary: A pretty system information tool written in POSIX sh.
 
 License: MIT

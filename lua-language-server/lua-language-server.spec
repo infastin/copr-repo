@@ -2,7 +2,7 @@
 
 Name: lua-language-server
 Version: 3.5.6
-Release: %autorelease
+Release: 2%{?dist}
 Summary: A language server that offers Lua language support - programmed in Lua.
 
 License: MIT
