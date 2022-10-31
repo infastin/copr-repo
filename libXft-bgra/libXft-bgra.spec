@@ -6,15 +6,15 @@
 
 Name: libXft-bgra
 Version: 2.3.3^%{gitdate}.%{shorthash}
-Release: 2%{?dist}
+Release: 3%{?dist}
 Summary: A patched version of libxft that allows for colored emojis to be rendered in Suckless software.
 
 License: MIT
 URL: https://github.com/uditkarode/libxft-bgra
 Source0: https://github.com/uditkarode/libxft-bgra/archive/%{githash}.tar.gz
 
-Provides: libXft
-Conflicts: libXft
+Provides: libXft(%{_arch})
+Conflicts: libXft(%{_arch})
 
 Requires: fontconfig >= 2.2-1
 
@@ -29,8 +29,8 @@ BuildRequires: fontconfig-devel >= 2.2-1
 Summary: Development files for %{name}-%{version}-%{release}.
 Requires: %{name} = %{version}-%{release}
 
-Provides: libXft-devel
-Conflicts: libXft-devel
+Provides: libXft-devel(%{_arch})
+Conflicts: libXft-devel(%{_arch})
 
 %description
 A patched version of libxft that allows for colored emojis to be rendered in Suckless software.
