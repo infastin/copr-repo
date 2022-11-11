@@ -9,6 +9,7 @@ License: BSD 2-Clause
 URL: https://elv.sh/
 Source0: https://github.com/elves/elvish/archive/v%{version}.tar.gz
 
+BuildRequires: git
 BuildRequires: golang >= 1.18.0
 
 %description
