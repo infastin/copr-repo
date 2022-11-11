@@ -1,13 +1,17 @@
 %global debug_package %{nil}
 
+%global gitdate 20220927
+%global githash 30a073d2eeab60416b3c2f2cd99176ff72ea1de9
+%global shorthash %(echo %{githash} | cut -c 1-10)
+
 Name: mktrayicon
-Version: 1.0.0
-Release: 2%{?dist}
+Version: 0^%{gitdate}.%{shorthash}
+Release: 3%{?dist}
 Summary: Create system tray icons by writing to a pipe. 
 
 License: MIT
-URL: https://github.com/infastin/mktrayicon
-Source0: https://github.com/infastin/mktrayicon/archive/%{version}.tar.gz
+URL: https://gitlab.com/infastin/mktrayicon
+Source0: https://gitlab.com/infastin/mktrayicon/-/archive/%{githash}/%{name}-%{githash}.tar.gz
 
 Requires: gtk3
 
@@ -21,7 +25,7 @@ BuildRequires: pkgconf
 Create system tray icons by writing to a pipe. 
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{githash}
 
 %build
 make %{?_smp_mflags}
