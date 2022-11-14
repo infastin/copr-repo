@@ -1,13 +1,13 @@
 %global debug_package %{nil}
 
 Name: lua-language-server
-Version: 3.6.2
+Version: 3.6.3
 Release: 1%{?dist}
 Summary: A language server that offers Lua language support - programmed in Lua.
 
 License: MIT
 URL: https://github.com/sumneko/lua-language-server
-Source0: https://github.com/sumneko/lua-language-server/archive/refs/tags/3.5.6.tar.gz
+Source0: https://github.com/sumneko/lua-language-server/archive/refs/tags/%{version}.tar.gz
 Source1: ./lua-language-server
 
 BuildRequires: git
@@ -25,7 +25,7 @@ A language server that offers Lua language support - programmed in Lua.
 git init
 git remote add origin %{URL}.git
 git fetch origin
-git reset --hard FETCH_HEAD
+git reset --hard %{version}
 git submodule update --depth 1 --init --recursive
 
 %build
