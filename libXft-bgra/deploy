@@ -4,8 +4,6 @@
 use str
 
 var releases = [
-	"fedora-35-i386"
-	"fedora-35-x86_64"
 	"fedora-36-i386"
 	"fedora-36-x86_64"
 	"fedora-37-i386"
