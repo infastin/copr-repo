@@ -1,16 +1,16 @@
 %global debug_package %{nil}
 
-Name: jetbrains-mono-nerd-fonts
+Name: fira-mono-nerd-fonts
 Version: 2.3.3
 Release: 1%{?dist}
-Summary: A Nerd Font patched version of JetBrains Mono.
+Summary: A Nerd Font patched version of Fira Mono.
 
 License: MIT
 URL: https://github.com/ryanoasis/nerd-fonts
-Source0: https://github.com/ryanoasis/nerd-fonts/releases/download/v%{version}/JetBrainsMono.zip
+Source0: https://github.com/ryanoasis/nerd-fonts/releases/download/v%{version}/FiraMono.zip
 
 %description
-A Nerd Font patched version of JetBrains Mono.
+A Nerd Font patched version of Fira Mono,
 
 %prep
 %setup -q -c
