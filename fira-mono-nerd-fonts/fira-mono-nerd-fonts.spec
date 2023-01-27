@@ -1,8 +1,8 @@
 %global debug_package %{nil}
 
-Name: fira-mode-nerd-fonts
+Name: fira-mono-nerd-fonts
 Version: 2.3.3
-Release: 2%{?dist}
+Release: 3%{?dist}
 Summary: A Nerd Font patched version of Fira Mono.
 
 License: MIT
