@@ -1,8 +1,8 @@
 %global debug_package %{nil}
 
-Name: fira-mono-nerd-fonts
+Name: fira-mode-nerd-fonts
 Version: 2.3.3
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: A Nerd Font patched version of Fira Mono.
 
 License: MIT
@@ -16,12 +16,13 @@ A Nerd Font patched version of Fira Mono,
 %setup -q -c
 
 %build
-find -iname "*Windows Compatible.ttf" -delete
+find -iname "*Windows Compatible.otf" -delete
+find -iname "Fura*.otf" -print0 | xargs -0 -I{} sh -c 'mv "$1" "${1//Fura/Fira}"' -- {}
 
 %install
 install -m 0755 -d %{buildroot}%{_datadir}/fonts
 install -m 0755 -d %{buildroot}%{_datadir}/fonts/%{name}
-find -iname "*.ttf" -exec install -m 0644 {} %{buildroot}%{_datadir}/fonts/%{name} \;
+find -iname "*.otf" -exec install -m 0644 {} %{buildroot}%{_datadir}/fonts/%{name} \;
 
 %post
 fc-cache -f -v
