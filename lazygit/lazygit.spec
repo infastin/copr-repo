@@ -28,7 +28,7 @@ install -m 0755 %{name} %{buildroot}%{_bindir}
 %license LICENSE
 %doc README.md CONTRIBUTING.md CODE-OF-CONDUCT.md
 
-%{_bindir}/5{name}
+%{_bindir}/%{name}
 
 %changelog
 %autochangelog
