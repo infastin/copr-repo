@@ -1,8 +1,8 @@
 %global debug_package %{nil}
 
 Name: lazygit
-Version: 0.35
-Release: 2%{?dist}
+Version: 0.36
+Release: 1%{?dist}
 Summary: Simple terminal UI for git commands.
 
 License: MIT
@@ -22,13 +22,13 @@ go build
 
 %install
 install -m 0755 -d %{buildroot}%{_bindir}
-install -m 0755 lazygit %{buildroot}%{_bindir}
+install -m 0755 %{name} %{buildroot}%{_bindir}
 
 %files
 %license LICENSE
 %doc README.md CONTRIBUTING.md CODE-OF-CONDUCT.md
 
-%{_bindir}/lazygit
+%{_bindir}/5{name}
 
 %changelog
 %autochangelog
