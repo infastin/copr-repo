@@ -1,27 +1,27 @@
 %global debug_package %{nil}
 
-Name: fira-code-nerd-fonts
+Name: fura-mono-nerd-fonts
 Version: 2.3.3
 Release: 1%{?dist}
-Summary: A Nerd Font patched version of Fira Code.
+Summary: A Nerd Font patched version of Fira Mono.
 
 License: MIT
 URL: https://github.com/ryanoasis/nerd-fonts
-Source0: https://github.com/ryanoasis/nerd-fonts/releases/download/v%{version}/FiraCode.zip
+Source0: https://github.com/ryanoasis/nerd-fonts/releases/download/v%{version}/FiraMono.zip
 
 %description
-A Nerd Font patched version of Fira Code,
+A Nerd Font patched version of Fira Mono,
 
 %prep
 %setup -q -c
 
 %build
-find -iname "*Windows Compatible.ttf" -delete
+find -iname "*Windows Compatible.otf" -delete
 
 %install
 install -m 0755 -d %{buildroot}%{_datadir}/fonts
 install -m 0755 -d %{buildroot}%{_datadir}/fonts/%{name}
-find -iname "*.ttf" -exec install -m 0644 {} %{buildroot}%{_datadir}/fonts/%{name} \;
+find -iname "*.otf" -exec install -m 0644 {} %{buildroot}%{_datadir}/fonts/%{name} \;
 
 %post
 fc-cache -f -v
