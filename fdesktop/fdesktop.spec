@@ -14,6 +14,7 @@ URL: https://gitlab.com/infastin/go-fdesktop
 Source0: https://gitlab.com/infastin/go-fdesktop/-/archive/%{githash}/%{name}-%{githash}.tar.gz
 
 BuildRequires: golang >= 1.18.0
+BuildRequires: git
 
 %description
 A command-line program that lists FreeDesktop desktop entries.
