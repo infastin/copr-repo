@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 %global gitdate 20230129
-%global githash 2e697541ab81a659e1bf9a1703ecdb99a3d5e9ce
+%global githash 88df1e3ee7b0daf0ae4f4b6b7572a34fc2a5fb65
 %global shorthash %(echo %{githash} | cut -c 1-10)
 
 Name: fdesktop
@@ -30,6 +30,8 @@ install -m 0755 -d %{buildroot}%{_bindir}
 install -m 0755 %{name} %{buildroot}%{_bindir}
 
 %files
+%license LICENSE
+
 %{_bindir}/%{name}
 
 %changelog

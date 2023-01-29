@@ -1,8 +1,8 @@
 %global debug_package %{nil}
 
 Name: adw-gtk3-theme
-Version: 4.1
-Release: 2%{?dist}
+Version: 4.2
+Release: 1%{?dist}
 Summary: The theme from libadwaita ported to GTK-3.
 
 License: GNU Lesser General Public License v2.1
@@ -13,7 +13,7 @@ BuildRequires: sassc
 BuildRequires: meson >= 0.51
 
 %description
-The theme from libadwaita ported to GTK-3.
+An unofficial GTK3 port of libadwaita.
 
 %prep
 %setup -q -n adw-gtk3-%{version}
@@ -26,6 +26,9 @@ The theme from libadwaita ported to GTK-3.
 %meson_install
 
 %files
+%license LICENSE
+%doc README.md
+
 %{_datadir}/themes/adw-gtk3*
 
 %changelog

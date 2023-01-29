@@ -2,10 +2,10 @@
 
 Name: jetbrains-mono-nerd-fonts
 Version: 2.3.3
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: A Nerd Font patched version of JetBrains Mono.
 
-License: MIT
+License: SIL Open Font License 1.1
 URL: https://github.com/ryanoasis/nerd-fonts
 Source0: https://github.com/ryanoasis/nerd-fonts/releases/download/v%{version}/JetBrainsMono.zip
 
@@ -30,6 +30,7 @@ fc-cache -f -v
 fc-cache -f -v
 
 %files
+%license OFL.txt
 %doc readme.md
 
 %{_datadir}/fonts/%{name}
