@@ -39,7 +39,7 @@ A patched version of libxft that allows for colored emojis to be rendered in Suc
 Development files for %{name}-%{version}-%{release}.
 
 %prep
-%setup -q -n %{name}-%{githash}
+%setup -q -n libxft-bgra-%{githash}
 
 %build
 autoreconf -v --install --force
