@@ -11,24 +11,22 @@ Source0: https://github.com/Raymo111/i3lock-color/archive/%{version}.tar.gz
 
 Provides: i3lock
 
-Requires: autoconf
-Requires: automake
 Requires: fontconfig
 Requires: libXinerama
 Requires: libXrandr
 
-BuildRequires: dh-autoreconf
 BuildRequires: gcc
-BuildRequires: cairo-devel         
+BuildRequires: autoconf
+BuildRequires: automake
+BuildRequires: cairo-devel
 BuildRequires: libev-devel
 BuildRequires: libjpeg-turbo-devel
 BuildRequires: libxkbcommon-devel
 BuildRequires: libxkbcommon-x11-devel
-BuildRequires: pam-devel
 BuildRequires: pkgconf
+BuildRequires: pam-devel
 BuildRequires: xcb-util-image-devel
 BuildRequires: xcb-util-xrm-devel
-BuildRequires: make
 
 %description
 The world's most popular non-default computer lockscreen.
