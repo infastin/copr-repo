@@ -6,12 +6,12 @@
 
 Name: mktrayicon
 Version: 0^%{gitdate}.%{shorthash}
-Release: 3%{?dist}
+Release: 4%{?dist}
 Summary: Create system tray icons by writing to a pipe. 
 
 License: MIT
-URL: https://gitlab.com/infastin/mktrayicon
-Source0: https://gitlab.com/infastin/mktrayicon/-/archive/%{githash}/%{name}-%{githash}.tar.gz
+URL: https://git.sr.ht/~infastin/mktrayicon
+Source0: https://git.sr.ht/~infastin/mktrayicon/archive/%{githash}.tar.gz
 
 Requires: gtk3
 

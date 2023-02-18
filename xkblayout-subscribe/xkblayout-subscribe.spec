@@ -6,12 +6,12 @@
 
 Name: xkblayout-subscribe
 Version: 0^%{gitdate}.%{shorthash}
-Release: 3%{?dist}
+Release: 4%{?dist}
 Summary: A small command-line program to monitor keyboard layout changes.
 
 License: MIT 
-URL: https://gitlab.com/infastin/xkblayout-subscribe
-Source0: https://gitlab.com/infastin/xkblayout-subscribe/-/archive/%{githash}/%{name}-%{githash}.tar.gz
+URL: https://git.sr.ht/~infastin/xkblayout-subscribe
+Source0: https://git.sr.ht/~infastin/xkblayout-subscribe/archive/%{githash}.tar.gz
 
 Requires: libX11
 
