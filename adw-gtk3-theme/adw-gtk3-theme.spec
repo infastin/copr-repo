@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name: adw-gtk3-theme
-Version: 4.2
+Version: 4.4
 Release: 1%{?dist}
 Summary: The theme from libadwaita ported to GTK-3.
 
