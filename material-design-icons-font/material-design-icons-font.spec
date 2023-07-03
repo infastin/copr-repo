@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name: material-design-icons-font
-Version: 7.1.96
+Version: 7.2.96
 Release: 1%{?dist}
 Summary: 7000+ Material Design Icons from the Community.
 
