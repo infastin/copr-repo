@@ -6,7 +6,7 @@
 
 Name: odin
 Version: 0^%{gitdate}.%{shorthash}
-Release: 3%{?dist}
+Release: 4%{?dist}
 Summary: Odin Programming Language.
 
 License: BSD 3-Clause License
@@ -35,6 +35,8 @@ install -m 0755 -d %{buildroot}%{optdir}/core
 cp -r core/ %{buildroot}%{optdir}/core
 install -m 0755 -d %{buildroot}%{optdir}/shared
 cp -r shared/ %{buildroot}%{optdir}/shared
+install -m 0755 -d %{buildroot}%{optdir}/vendor
+cp -r vendor/ %{buildroot}%{optdir}/vendor
 install -m 0755 -d %{buildroot}%{_bindir}
 
 %post
