@@ -9,7 +9,7 @@ Version: 0^%{gitdate}.%{shorthash}
 Release: 4%{?dist}
 Summary: A small command-line program to monitor keyboard layout changes.
 
-License: MIT 
+License: MIT
 URL: https://git.sr.ht/~infastin/xkblayout-subscribe
 Source0: https://git.sr.ht/~infastin/xkblayout-subscribe/archive/%{githash}.tar.gz
 
@@ -29,7 +29,7 @@ A small command-line program to monitor keyboard layout changes.
 make %{?_smp_mflags}
 
 %install
-make PREFIX=%{buildroot}/%{_prefix} install
+make PREFIX=%{buildroot}%{_prefix} install
 
 %files
 %license LICENSE
