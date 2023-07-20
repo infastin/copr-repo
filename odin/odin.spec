@@ -6,7 +6,7 @@
 
 Name: odin
 Version: 0^%{gitdate}.%{shorthash}
-Release: 2%{?dist}
+Release: 3%{?dist}
 Summary: Odin Programming Language.
 
 License: BSD 3-Clause License
@@ -26,7 +26,7 @@ A fast, concise, readable, pragmatic and open sourced programming language.
 %build
 make %{?_smp_mflags} PREFIX=%{buildroot}%{_prefix} release
 
-%global optdir /opt/fedora/%{name}
+%global optdir /opt/%{name}
 
 %install
 install -m 0755 -d %{buildroot}%{optdir}
