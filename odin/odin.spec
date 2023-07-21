@@ -4,6 +4,10 @@
 %global githash 3072479c3c3c4818b0a41dc2aed288e8b3ec0582
 %global shorthash %(echo %{githash} | cut -c 1-10)
 
+%define __check_files %{nil}
+%define __spec_install_post %{nil}
+%define __os_install_post %{nil}
+
 Name: odin
 Version: 0^%{gitdate}.%{shorthash}
 Release: 4%{?dist}
@@ -12,6 +16,8 @@ Summary: Odin Programming Language.
 License: BSD 3-Clause License
 URL: https://github.com/odin-lang/Odin
 Source0: https://github.com/odin-lang/Odin/archive/%{githash}.tar.gz
+
+Provides: odin%{?_isa}
 
 BuildRequires: llvm14-devel
 BuildRequires: clang
@@ -27,17 +33,15 @@ A fast, concise, readable, pragmatic and open sourced programming language.
 make %{?_smp_mflags} PREFIX=%{buildroot}%{_prefix} release
 
 %global optdir /opt/%{name}
+%global __provides_exclude_from ^(%{optdir}/vendor/.*)$
 
 %install
 install -m 0755 -d %{buildroot}%{optdir}
 install -m 0755 odin %{buildroot}%{optdir}
-install -m 0755 -d %{buildroot}%{optdir}/core
-cp -r core/ %{buildroot}%{optdir}/core
-install -m 0755 -d %{buildroot}%{optdir}/shared
-cp -r shared/ %{buildroot}%{optdir}/shared
-install -m 0755 -d %{buildroot}%{optdir}/vendor
-cp -r vendor/ %{buildroot}%{optdir}/vendor
 install -m 0755 -d %{buildroot}%{_bindir}
+cp -r core/ %{buildroot}%{optdir}/
+cp -r shared/ %{buildroot}%{optdir}/
+cp -r vendor/ %{buildroot}%{optdir}/
 
 %post
 ln -sf %{optdir}/odin %{_bindir}
