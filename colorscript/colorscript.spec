@@ -1,12 +1,12 @@
 %global debug_package %{nil}
 
-%global gitdate 20220928
-%global githash 3a255648d3b0fa9f804158d311b4f62bd61b227f
+%global gitdate 20230922
+%global githash 43a8d9187253aaaf86bf664ac92011e6c66d94e3
 %global shorthash %(echo %{githash} | cut -c 1-10)
 
 Name: colorscript
 Version: 0^%{gitdate}.%{shorthash}
-Release: 4%{?dist}
+Release: 1%{?dist}
 Summary: A collection of terminal color scripts.
 
 License: MIT
