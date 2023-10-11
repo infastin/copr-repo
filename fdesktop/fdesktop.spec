@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
-%global gitdate 20230129
-%global githash 88df1e3ee7b0daf0ae4f4b6b7572a34fc2a5fb65
+%global gitdate 20231011
+%global githash 239e1b6fa53110391f35e60bd72e67bf9b1dd539
 %global shorthash %(echo %{githash} | cut -c 1-10)
 
 Name: fdesktop
@@ -13,7 +13,7 @@ License: MIT
 URL: https://gitlab.com/infastin/go-fdesktop
 Source0: https://gitlab.com/infastin/go-fdesktop/-/archive/%{githash}/%{name}-%{githash}.tar.gz
 
-BuildRequires: golang >= 1.18.0
+BuildRequires: golang >= 1.16.0
 BuildRequires: git
 
 %description
