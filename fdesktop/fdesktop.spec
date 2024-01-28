@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
-%global gitdate 20231011
-%global githash 239e1b6fa53110391f35e60bd72e67bf9b1dd539
+%global gitdate 20240128
+%global githash 5b3b543b4abcd8056e9fab95ebaf1c3e54adc68b
 %global shorthash %(echo %{githash} | cut -c 1-10)
 
 Name: fdesktop
@@ -10,8 +10,8 @@ Release: 1%{?dist}
 Summary: A command-line program that lists FreeDesktop desktop entries.
 
 License: MIT
-URL: https://gitlab.com/infastin/go-fdesktop
-Source0: https://gitlab.com/infastin/go-fdesktop/-/archive/%{githash}/%{name}-%{githash}.tar.gz
+URL: https://github.com/infastin/go-fdesktop
+Source0: https://github.com/infastin/go-fdesktop/archive/%{githash}.tar.gz
 
 BuildRequires: golang >= 1.16.0
 BuildRequires: git
