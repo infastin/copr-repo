@@ -15,7 +15,7 @@ Summary: Odin Programming Language.
 
 License: BSD 3-Clause License
 URL: https://github.com/odin-lang/Odin
-Source0: https://github.com/odin-lang/Odin/archive/%{githash}.tar.gz
+Source0: %{url}/archive/%{githash}.tar.gz
 
 Provides: odin%{?_isa}
 

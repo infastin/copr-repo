@@ -7,7 +7,7 @@ Summary: A Nerd Font patched version of JetBrains Mono.
 
 License: SIL Open Font License 1.1
 URL: https://github.com/ryanoasis/nerd-fonts
-Source0: https://github.com/ryanoasis/nerd-fonts/releases/download/v%{version}/JetBrainsMono.zip
+Source0: %{url}/releases/download/v%{version}/JetBrainsMono.zip
 
 %description
 A Nerd Font patched version of JetBrains Mono.

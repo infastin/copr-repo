@@ -9,9 +9,9 @@ Version: 1b^%{gitdate}.%{shorthash}
 Release: 2%{?dist}
 Summary: A small command-line program to get/set the current keyboard layout.
 
-License: GNU General Public License v2.0 
+License: GNU General Public License v2.0
 URL: https://github.com/nonpop/xkblayout-state
-Source0: https://github.com/nonpop/xkblayout-state/archive/%{githash}.tar.gz
+Source0: %{url}/archive/%{githash}.tar.gz
 
 Requires: libX11
 

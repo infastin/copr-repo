@@ -11,7 +11,7 @@ Summary: A collection of terminal color scripts.
 
 License: MIT
 URL: https://git.sr.ht/~infastin/colorscript
-Source0: https://git.sr.ht/~infastin/colorscript/archive/%{githash}.tar.gz
+Source0: %{url}/archive/%{githash}.tar.gz
 
 BuildRequires: make
 

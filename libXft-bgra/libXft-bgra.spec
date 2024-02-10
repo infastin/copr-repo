@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 %global gitdate 20200807
-%global githash 072cd202c0f4f757b32deac531586bc0429c8401 
+%global githash 072cd202c0f4f757b32deac531586bc0429c8401
 %global shorthash %(echo %{githash} | cut -c 1-10)
 
 Name: libXft-bgra
@@ -11,14 +11,14 @@ Summary: A patched version of libxft that allows for colored emojis to be render
 
 License: MIT
 URL: https://github.com/uditkarode/libxft-bgra
-Source0: https://github.com/uditkarode/libxft-bgra/archive/%{githash}.tar.gz
+Source0: %{url}/archive/%{githash}.tar.gz
 
 Provides: libXft%{?_isa}
 Conflicts: libXft%{?_isa}
 
 Requires: fontconfig >= 2.2-1
 
-BuildRequires: make	
+BuildRequires: make
 BuildRequires: xorg-x11-util-macros
 BuildRequires: autoconf automake libtool
 BuildRequires: pkgconfig(xrender)
@@ -44,7 +44,7 @@ Development files for %{name}-%{version}-%{release}.
 %build
 autoreconf -v --install --force
 %configure
-make %{?_smp_mflags} 
+make %{?_smp_mflags}
 
 %install
 rm -rf %{buildroot}

@@ -7,7 +7,7 @@ Summary: The world's most popular non-default computer lockscreen.
 
 License: MIT
 URL: https://github.com/Raymo111/i3lock-color
-Source0: https://github.com/Raymo111/i3lock-color/archive/%{version}.tar.gz
+Source0: %{url}/archive/%{version}.tar.gz
 
 Provides: i3lock
 

@@ -7,17 +7,17 @@
 Name: matcha-gtk-theme
 Version: 0^%{gitdate}.%{shorthash}
 Release: 1%{?dist}
-Summary: Matcha is a flat Design theme for GTK 3, GTK 2 and Gnome-Shell. 
+Summary: Matcha is a flat Design theme for GTK 3, GTK 2 and Gnome-Shell.
 
 License: GNU General Public License v3.0
 URL: https://github.com/vinceliuice/Matcha-gtk-theme
-Source0: https://github.com/vinceliuice/Matcha-gtk-theme/archive/%{githash}.tar.gz
+Source0: %{url}/archive/%{githash}.tar.gz
 
 Requires: gtk-murrine-engine
 Requires: gtk2-engines
 
 %description
-Matcha is a flat Design theme for GTK 3, GTK 2 and Gnome-Shell 
+Matcha is a flat Design theme for GTK 3, GTK 2 and Gnome-Shell
 
 %prep
 %setup -q -n Matcha-gtk-theme-%{githash}

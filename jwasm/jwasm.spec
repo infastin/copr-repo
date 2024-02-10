@@ -3,11 +3,11 @@
 Name: jwasm
 Version: 2.17
 Release: 1%{?dist}
-Summary: Masm compatible assembler 
+Summary: Masm compatible assembler
 
 License: Sybase Open Watcom Public License version 1.0
 URL: https://github.com/Baron-von-Riedesel/JWasm
-Source0: https://github.com/Baron-von-Riedesel/JWasm/archive/refs/tags/v%{version}.tar.gz
+Source0: %{url}/archive/refs/tags/v%{version}.tar.gz
 
 BuildRequires: gcc
 BuildRequires: make

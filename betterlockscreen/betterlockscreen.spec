@@ -7,7 +7,7 @@ Summary: Sweet looking lockscreen for linux system.
 
 License: MIT
 URL: https://github.com/betterlockscreen/betterlockscreen
-Source0: https://github.com/betterlockscreen/betterlockscreen/archive/v%{version}.tar.gz
+Source0: %{url}/archive/v%{version}.tar.gz
 
 Requires: i3lock-color >= 2.13.c.3
 Requires: xdpyinfo

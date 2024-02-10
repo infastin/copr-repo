@@ -7,7 +7,7 @@ Summary: A censorship circumvention tool to evade detection by authoritarian sta
 
 License: GNU General Public License v3.0
 URL: https://github.com/cbeuw/Cloak
-Source0: https://github.com/cbeuw/Cloak/archive/v%{version}.tar.gz
+Source0: %{url}/archive/v%{version}.tar.gz
 
 Provides: cloak
 

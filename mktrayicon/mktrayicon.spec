@@ -7,11 +7,11 @@
 Name: mktrayicon
 Version: 0^%{gitdate}.%{shorthash}
 Release: 4%{?dist}
-Summary: Create system tray icons by writing to a pipe. 
+Summary: Create system tray icons by writing to a pipe.
 
 License: MIT
 URL: https://git.sr.ht/~infastin/mktrayicon
-Source0: https://git.sr.ht/~infastin/mktrayicon/archive/%{githash}.tar.gz
+Source0: %{url}/archive/%{githash}.tar.gz
 
 Requires: gtk3
 
@@ -22,7 +22,7 @@ BuildRequires: make
 BuildRequires: pkgconf
 
 %description
-Create system tray icons by writing to a pipe. 
+Create system tray icons by writing to a pipe.
 
 %prep
 %setup -q -n %{name}-%{githash}

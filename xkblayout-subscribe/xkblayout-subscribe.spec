@@ -11,7 +11,7 @@ Summary: A small command-line program to monitor keyboard layout changes.
 
 License: MIT
 URL: https://git.sr.ht/~infastin/xkblayout-subscribe
-Source0: https://git.sr.ht/~infastin/xkblayout-subscribe/archive/%{githash}.tar.gz
+Source0: %{url}/archive/%{githash}.tar.gz
 
 Requires: libX11
 

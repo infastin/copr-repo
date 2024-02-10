@@ -11,7 +11,7 @@ Summary: A command-line program that lists FreeDesktop desktop entries.
 
 License: MIT
 URL: https://github.com/infastin/go-fdesktop
-Source0: https://github.com/infastin/go-fdesktop/archive/%{githash}.tar.gz
+Source0: %{url}/archive/%{githash}.tar.gz
 
 BuildRequires: golang >= 1.16.0
 BuildRequires: git
