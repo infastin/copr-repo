@@ -10,7 +10,7 @@
 
 Name: odin
 Version: 0^%{gitdate}.%{shorthash}
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Odin Programming Language.
 
 License: BSD 3-Clause License
@@ -32,19 +32,19 @@ A fast, concise, readable, pragmatic and open sourced programming language.
 %build
 make %{?_smp_mflags} PREFIX=%{buildroot}%{_prefix} release
 
-%global optdir /opt/%{name}
-%global __provides_exclude_from ^(%{optdir}/vendor/.*)$
+%global libdir %{_libdir}/%{name}
+%global __provides_exclude_from ^(%{libdir}/vendor/.*)$
 
 %install
-install -m 0755 -d %{buildroot}%{optdir}
-install -m 0755 odin %{buildroot}%{optdir}
+install -m 0755 -d %{buildroot}%{libdir}
+install -m 0755 odin %{buildroot}%{libdir}
 install -m 0755 -d %{buildroot}%{_bindir}
-cp -r core/ %{buildroot}%{optdir}/
-cp -r shared/ %{buildroot}%{optdir}/
-cp -r vendor/ %{buildroot}%{optdir}/
+cp -r core/ %{buildroot}%{libdir}/
+cp -r shared/ %{buildroot}%{libdir}/
+cp -r vendor/ %{buildroot}%{libdir}/
 
 %post
-ln -sf %{optdir}/odin %{_bindir}
+ln -sf %{libdir}/odin %{_bindir}
 
 %postun
 rm -f %{_bindir}/odin
@@ -53,7 +53,7 @@ rm -f %{_bindir}/odin
 %license LICENSE
 %doc README.md
 
-%{optdir}
+%{libdir}
 
 %changelog
 %autochangelog
