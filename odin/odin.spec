@@ -10,7 +10,7 @@
 
 Name: odin
 Version: 0^%{gitdate}.%{shorthash}
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Odin Programming Language.
 
 License: BSD 3-Clause License
@@ -19,7 +19,7 @@ Source0: %{url}/archive/%{githash}.tar.gz
 
 Provides: odin%{?_isa}
 
-BuildRequires: llvm14-devel
+BuildRequires: llvm16-devel
 BuildRequires: clang
 BuildRequires: make
 
