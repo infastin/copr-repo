@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
-%global gitdate 20230719
-%global githash 3072479c3c3c4818b0a41dc2aed288e8b3ec0582
+%global gitdate 20240201
+%global githash 539cec7496c128a0f8bb10794a1d3d0d043705f0
 %global shorthash %(echo %{githash} | cut -c 1-10)
 
 %define __check_files %{nil}
@@ -10,7 +10,7 @@
 
 Name: odin
 Version: 0^%{gitdate}.%{shorthash}
-Release: 4%{?dist}
+Release: 1%{?dist}
 Summary: Odin Programming Language.
 
 License: BSD 3-Clause License
