@@ -10,7 +10,7 @@
 
 Name: odin
 Version: 0^%{gitdate}.%{shorthash}
-Release: 2%{?dist}
+Release: 1%{?dist}
 Summary: Odin Programming Language.
 
 License: BSD 3-Clause License
