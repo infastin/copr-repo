@@ -45,7 +45,9 @@ cp -r vendor/ %{buildroot}%{libdir}/
 ln -sf %{libdir}/%{name} %{_bindir}
 
 %postun
-rm -f %{_bindir}/%{name}
+if [[ "$1" -eq 0 ]]; then
+  rm -f %{_bindir}/%{name} ;;
+fi
 
 %files
 %license LICENSE
