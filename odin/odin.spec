@@ -10,7 +10,7 @@
 
 Name: odin
 Version: 0^%{gitdate}.%{shorthash}
-Release: 4%{?dist}
+Release: 5%{?dist}
 Summary: Odin Programming Language.
 
 License: BSD 3-Clause License
@@ -46,7 +46,7 @@ ln -sf %{libdir}/%{name} %{_bindir}
 
 %postun
 if [[ "$1" -eq 0 ]]; then
-  rm -f %{_bindir}/%{name} ;;
+  rm -f %{_bindir}/%{name}
 fi
 
 %files
