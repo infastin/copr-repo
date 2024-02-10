@@ -10,14 +10,12 @@
 
 Name: odin
 Version: 0^%{gitdate}.%{shorthash}
-Release: 2%{?dist}
+Release: 3%{?dist}
 Summary: Odin Programming Language.
 
 License: BSD 3-Clause License
 URL: https://github.com/odin-lang/Odin
 Source0: %{url}/archive/%{githash}.tar.gz
-
-Provides: odin%{?_isa}
 
 BuildRequires: llvm14-devel
 BuildRequires: clang
@@ -37,17 +35,17 @@ make %{?_smp_mflags} PREFIX=%{buildroot}%{_prefix} release
 
 %install
 install -m 0755 -d %{buildroot}%{libdir}
-install -m 0755 odin %{buildroot}%{libdir}
+install -m 0755 %{name} %{buildroot}%{libdir}
 install -m 0755 -d %{buildroot}%{_bindir}
+cp -r base/ %{buildroot}%{libdir}/
 cp -r core/ %{buildroot}%{libdir}/
-cp -r shared/ %{buildroot}%{libdir}/
 cp -r vendor/ %{buildroot}%{libdir}/
 
 %post
-ln -sf %{libdir}/odin %{_bindir}
+ln -sf %{libdir}/%{name} %{_bindir}
 
 %postun
-rm -f %{_bindir}/odin
+rm -f %{_bindir}/%{name}
 
 %files
 %license LICENSE

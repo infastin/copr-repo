@@ -23,7 +23,7 @@ make -f GccUnix.mak
 
 %install
 install -m 0755 -d %{buildroot}%{_bindir}
-install -m 0755 build/GccUnixR/jwasm %{buildroot}%{_bindir}
+install -m 0755 build/GccUnixR/%{name} %{buildroot}%{_bindir}
 
 %files
 %license Html/License.html

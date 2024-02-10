@@ -27,9 +27,9 @@ Sweet looking lockscreen for linux system.
 
 %install
 install -m 0755 -d %{buildroot}%{_bindir}
-install -m 0755 betterlockscreen %{buildroot}%{_bindir}
+install -m 0755 %{name} %{buildroot}%{_bindir}
 install -m 0755 -d %{buildroot}%{_unitdir}
-install -m 0644 system/betterlockscreen@.service %{buildroot}%{_unitdir}
+install -m 0644 system/%{name}@.service %{buildroot}%{_unitdir}
 
 %post
 %systemd_post %{name}@USER.service
@@ -45,8 +45,8 @@ install -m 0644 system/betterlockscreen@.service %{buildroot}%{_unitdir}
 %doc README.md CONTRIBUTING.md
 %doc examples
 
-%{_bindir}/betterlockscreen
-%{_unitdir}/betterlockscreen@.service
+%{_bindir}/%{name}
+%{_unitdir}/%{name}@.service
 
 %changelog
 %autochangelog

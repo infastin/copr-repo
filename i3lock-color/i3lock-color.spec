@@ -9,8 +9,6 @@ License: MIT
 URL: https://github.com/Raymo111/i3lock-color
 Source0: %{url}/archive/%{version}.tar.gz
 
-Provides: i3lock
-
 Requires: fontconfig
 Requires: libXinerama
 Requires: libXrandr
