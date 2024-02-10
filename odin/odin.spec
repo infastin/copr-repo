@@ -19,7 +19,7 @@ Source0: %{url}/archive/%{githash}.tar.gz
 
 Provides: odin%{?_isa}
 
-BuildRequires: llvm16-devel
+BuildRequires: llvm-devel
 BuildRequires: clang
 BuildRequires: make
 
