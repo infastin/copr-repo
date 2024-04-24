@@ -3,7 +3,7 @@
 %global crate shadowsocks-rust
 
 Name: rust-shadowsocks-rust
-Version: 1.17.1
+Version: 1.18.3
 Release: 1%{?dist}
 Summary: Shadowsocks is a fast tunnel proxy that helps you bypass firewalls.
 
