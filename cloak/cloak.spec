@@ -9,7 +9,7 @@ License: GNU General Public License v3.0
 URL: https://github.com/cbeuw/Cloak
 Source0: %{url}/archive/v%{version}.tar.gz
 
-BuildRequires: golang >= 1.21.0
+BuildRequires: golang >= 1.22.0
 BuildRequires: git
 BuildRequires: make
 
