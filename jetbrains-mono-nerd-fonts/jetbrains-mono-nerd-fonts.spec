@@ -31,7 +31,7 @@ fc-cache -f -v
 
 %files
 %license OFL.txt
-%doc readme.md
+%doc README.md
 
 %{_datadir}/fonts/%{name}
 
