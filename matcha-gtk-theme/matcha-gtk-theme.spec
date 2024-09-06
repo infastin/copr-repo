@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
-%global gitdate 20230403
-%global githash f6eebf60c79bb70ad9fa0e4c89ae05222f6701ba
+%global gitdate 20240426
+%global githash 4f1de19860e2b7d43d770d3a984d6537848d9cd8
 %global shorthash %(echo %{githash} | cut -c 1-10)
 
 Name: matcha-gtk-theme

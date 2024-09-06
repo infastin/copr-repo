@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name: betterlockscreen
-Version: 4.2.0
+Version: 4.4.0
 Release: 1%{?dist}
 Summary: Sweet looking lockscreen for linux system.
 

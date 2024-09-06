@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name: gleam
-Version: 1.2.1
+Version: 1.4.1
 Release: 1%{?dist}
 Summary: A friendly language for building type-safe, scalable systems!
 

@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name: jwasm
-Version: 2.17
+Version: 2.18
 Release: 1%{?dist}
 Summary: Masm compatible assembler
 

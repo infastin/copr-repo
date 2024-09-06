@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name: jetbrains-mono-nerd-fonts
-Version: 3.0.2
+Version: 3.2.1
 Release: 2%{?dist}
 Summary: A Nerd Font patched version of JetBrains Mono.
 
