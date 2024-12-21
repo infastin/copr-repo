@@ -7,7 +7,7 @@ Summary: Create system tray icons by writing to a pipe.
 
 License: MIT
 URL: https://github.com/infastin/mktrayicon
-Source0: %{url}/archive/%{version}.tar.gz
+Source0: %{url}/archive/v%{version}.tar.gz
 
 Requires: gtk3
 
