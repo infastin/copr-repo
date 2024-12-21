@@ -1,8 +1,8 @@
 %global debug_package %{nil}
 
 Name: jetbrains-mono-nerd-fonts
-Version: 3.2.1
-Release: 2%{?dist}
+Version: 3.3.0
+Release: 1%{?dist}
 Summary: A Nerd Font patched version of JetBrains Mono.
 
 License: SIL Open Font License 1.1
