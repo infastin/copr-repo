@@ -1,17 +1,13 @@
 %global debug_package %{nil}
 
-%global gitdate 20211106
-%global githash f311779ed95f43f1fdebed0f710ad84057e6fe19
-%global shorthash %(echo %{githash} | cut -c 1-10)
-
 Name: xkblayout-state
-Version: 1b^%{gitdate}.%{shorthash}
-Release: 2%{?dist}
+Version: 1.0.0
+Release: 1%{?dist}
 Summary: A small command-line program to get/set the current keyboard layout.
 
 License: GNU General Public License v2.0
-URL: https://github.com/nonpop/xkblayout-state
-Source0: %{url}/archive/%{githash}.tar.gz
+URL: https://github.com/infastin/xkblayout-state
+Source0: %{url}/archive/v%{version}.tar.gz
 
 Requires: libX11
 
@@ -23,7 +19,7 @@ BuildRequires: make
 A small command-line program to get/set the current keyboard layout.
 
 %prep
-%setup -q -n %{name}-%{githash}
+%setup -q -n %{name}-%{version}
 
 %build
 make %{?_smp_mflags}
