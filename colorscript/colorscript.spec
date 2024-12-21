@@ -6,11 +6,11 @@
 
 Name: colorscript
 Version: 0^%{gitdate}.%{shorthash}
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: A collection of terminal color scripts.
 
 License: MIT
-URL: https://git.sr.ht/~infastin/colorscript
+URL: https://github.com/infastin/colorscript
 Source0: %{url}/archive/%{githash}.tar.gz
 
 BuildRequires: make
