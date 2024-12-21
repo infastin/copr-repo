@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name: cloak
-Version: 2.9.0
+Version: 2.10.0
 Release: 1%{?dist}
 Summary: A censorship circumvention tool to evade detection by authoritarian state adversaries.
 
