@@ -1,17 +1,13 @@
 %global debug_package %{nil}
 
-%global gitdate 20201002
-%global githash 84290e8bcfd51093230b2ffdd3986c891a7fb485
-%global shorthash %(echo %{githash} | cut -c 1-10)
-
 Name: xkblayout-subscribe
-Version: 0^%{gitdate}.%{shorthash}
-Release: 4%{?dist}
+Version: 0.1.0
+Release: 1%{?dist}
 Summary: A small command-line program to monitor keyboard layout changes.
 
 License: MIT
-URL: https://git.sr.ht/~infastin/xkblayout-subscribe
-Source0: %{url}/archive/%{githash}.tar.gz
+URL: https://github.com/infastin/xkblayout-subscribe
+Source0: %{url}/archive/v%{version}.tar.gz
 
 Requires: libX11
 
@@ -23,7 +19,7 @@ BuildRequires: make
 A small command-line program to monitor keyboard layout changes.
 
 %prep
-%setup -q -n %{name}-%{githash}
+%setup -q -n %{name}-%{version}
 
 %build
 make %{?_smp_mflags}
