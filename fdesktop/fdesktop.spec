@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name: fdesktop
-Version: 0.1.1
+Version: 0.1.2
 Release: 1%{?dist}
 Summary: A command-line program that lists FreeDesktop desktop entries.
 
